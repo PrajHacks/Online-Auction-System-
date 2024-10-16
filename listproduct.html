@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Product - Online Auction System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Online Auction System</h1>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="createaccount.html">Create Account</a></li>
+                    <li><a href="listproduct.html">List Product</a></li>
+                    <li><a href="viewAllProducts.html">View All Products</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section id="list-product">
+                <h2>List Your Product</h2>
+                <form id="product-form" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="product-name">Product Name:</label>
+                        <input type="text" id="product-name" name="product-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-description">Description:</label>
+                        <textarea id="product-description" name="product-description" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="starting-bid">Starting Bid ($):</label>
+                        <input type="number" id="starting-bid" name="starting-bid" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="end-date">End Date:</label>
+                        <input type="date" id="end-date" name="end-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-image">Upload Product Image:</label>
+                        <input type="file" id="product-image" name="product-image" accept="image/*" required>
+                    </div>
+                    <button type="submit">List Product</button>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
